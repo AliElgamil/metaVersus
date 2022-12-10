@@ -123,3 +123,8 @@
   transform: translateX(-50%);
   z-index: -1;
 }
+
+.bg-primary-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 35 46 / var(--tw-bg-opacity));
+}
