@@ -40,7 +40,9 @@
     "components/InsightCard.jsx",
     "components/Footer.jsx",
     "components/ExploreCard.jsx",
-    "components/CustomTexts.jsx"
+    "components/CustomTexts.jsx",
+    "pages/_app.jsx",
+    "pages/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

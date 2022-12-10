@@ -14,6 +14,7 @@ const MyApp = ({ Component, pageProps }) => (
         rel="stylesheet"
         href="https://stijndv.com/fonts/Eudoxus-Sans.css"
       />
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" />
     </Head>
     <Component {...pageProps} />
   </>
