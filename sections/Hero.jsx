@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { scrollTo } from '../utils/scrollTo';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -37,15 +38,17 @@ const Hero = () => (
           className="w-full sm:h=[500px] h-[350px] rounded-tl-[140px] z-10 relative"
         />
 
-        <a href="#explore" className="pointer-events-none">
+        <button type="button" className="pointer-events-none w-full">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
             <img
               src="/stamp.png"
               alt="stamp"
+              onClick={scrollTo.bind(this)}
+              data-scroll="#explore"
               className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain pointer-events-auto"
             />
           </div>
-        </a>
+        </button>
       </motion.div>
     </motion.div>
   </section>

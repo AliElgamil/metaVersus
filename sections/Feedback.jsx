@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, zoomIn } from '../utils/motion';
 import styles from '../styles';
+import { scrollTo } from '../utils/scrollTo';
 
 const Feedback = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -43,17 +44,18 @@ const Feedback = () => (
           className="w-full lg:h-[610px] h-auto min-h-[21px] object-cover rounded-[40px]"
         />
 
-        <motion.a
-          href="#explore"
+        <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute left-0 top-[10%] pointer-events-none"
         >
           <img
             src="/stamp.png"
             alt="stamp"
-            className="w-[155px] h-[155px] object-contain -translate-x-1/2 pointer-events-auto"
+            onClick={scrollTo.bind(this)}
+            data-scroll="#explore"
+            className="w-[155px] h-[155px] object-contain -translate-x-1/2 pointer-events-auto cursor-pointer"
           />
-        </motion.a>
+        </motion.div>
       </motion.div>
     </motion.div>
   </section>
