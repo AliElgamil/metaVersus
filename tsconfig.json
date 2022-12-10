@@ -25,8 +25,22 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/Navbar.tsx",
-    "utils/motion.js"
+    "components/Navbar.jsx",
+    "utils/motion.js",
+    "sections/World.jsx",
+    "sections/WhatsNew.jsx",
+    "sections/Insights.jsx",
+    "sections/Hero.jsx",
+    "sections/GetStarted.jsx",
+    "sections/Feedback.jsx",
+    "sections/Explore.jsx",
+    "sections/About.jsx",
+    "components/StartSteps.jsx",
+    "components/NewFeatures.jsx",
+    "components/InsightCard.jsx",
+    "components/Footer.jsx",
+    "components/ExploreCard.jsx",
+    "components/CustomTexts.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
 import { TypingText, ExploreCard, TitleText } from '../components';
 import { exploreWorlds } from '../constants';
-import { useState } from 'react';
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');
@@ -22,6 +22,7 @@ const Explore = () => {
         <TypingText title="| Thw world" textStyles="text-center" />
         <TitleText
           title={
+            // eslint-disable-next-line react/jsx-wrap-multilines
             <>
               Choose the world you want <br className="md:block hidden" /> to
               explore
